@@ -1,8 +1,8 @@
 # Yuvo-Project
 
-##API DOCUMENTATION
+**API DOCUMENTATION**
 
-###Create initial table:
+Create initial table:
 
 create table TRANS_MW_ERC_PM_TN_RADIO_LINK_POWER (
   NETWORK_SID INT PRIMARY KEY,
@@ -30,7 +30,7 @@ create table TRANS_MW_ERC_PM_TN_RADIO_LINK_POWER (
   PORT VARCHAR
 );
 
-###Create daily/hourly aggregation tables:
+Create daily/hourly aggregation tables:
 
 create table TRANS_MW_AGG_SLOT_HOURLY (
   "TIME" DATETIME,
@@ -54,7 +54,7 @@ create table TRANS_MW_AGG_SLOT_DAILY (
   RSL_DEVIATION FLOAT
 );
 
-###Create tables to check for already parsed and loaded files.
+Create tables to check for already parsed and loaded files.
 
 create table parsed_files(
 fileName VARCHAR
