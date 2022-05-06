@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+}
+.customer-photo {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-size: 32px 35px;
+    background-position: center center;
+    vertical-align: middle;
+    line-height: 32px;
+    box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
+    margin-left: 5px;
+}
+
+.customer-name {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 32px;
+    padding-left: 3px;
+}
+
+#grid{
+    margin: 10px;
+}
+
+#chart{
+    margin: 10px;
+}
+
+.filter_btns {
+    background-color: #4a16d6;
+    border: none;
+    font-weight: 500;
+    font-family: FontAwesome;
+    width: 185px;
+    text-transform: uppercase;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 8px;
+    margin:10px;
+    cursor: pointer;
+  }
+  .filter_btns:hover {
+      background-color: #1e0466;
+}
+.filter_btns:active {
+    background-color: #1e0466;
+    transform: translateY(4px);
+  }
+
+
+  fieldset{
+      width: 200px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+  }
+
+  .title_div{
+      background-color: #4a16d6;
+      overflow: hidden;
+      padding:20px;
+      text-align: center;
+      margin-bottom: 15px;
+      
+  }
+h1{
+    background-color: #1a5ef0;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

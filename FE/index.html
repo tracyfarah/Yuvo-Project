@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.2.620/styles/kendo.common-material.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.2.620/styles/kendo.material.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.2.620/styles/kendo.material.mobile.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Add Kendo Grid Js Reference -->
+    <script src="https://kendo.cdn.telerik.com/2018.2.620/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2018.2.620/js/jszip.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2018.2.620/js/kendo.all.min.js"></script>
+
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+
+    <div class="title_div">
+        <h1>KPI DASHBOARD</h1>
+    </div>
+    <div id="data-container">
+        <div>
+            <fieldset>
+                <legend>Select a KPI to display:</legend>
+                <input type="radio" id="rx_btn" value="max_RX_Level" name="kpi_choice" checked>
+                <label for="rx_btn">Max RX level</label><br>
+                <input type="radio" id="tx_btn" value="max_TX_Level" name="kpi_choice">
+                <label for="tx_btn">Max TX level</label><br>
+                <input type="radio" id="rsl_btn" value="rsL_Deviation" name="kpi_choice">
+                <label for="rsl_btn">RSL deviation</label>
+            </fieldset>
+
+        </div>
+        <div id="chart"></div>
+        <button class=" filter_btns" id="filter_btn">Show Hourly</button>
+        <label for="kpi-time">Display values between:</label>
+        <label class="toolbar-calendar" for="dateTimePickerFrom">Date Time From:</label>
+        <input class="toolbar-calendar" id="dateTimePickerFrom" /><label class="toolbar-calendar" for="dateTimePickerTo">Date Time To:</label>
+        <input class="toolbar-calendar" id="dateTimePickerTo" />
+        <button class="filter_btns" id="between_btn">Filter Dates</button>
+        <button class="filter_btns" id="clearFilter">Clear Filter</button>
+        <div id="grid"></div>
+    </div>
+
+
+
+
+</body>
+
+</html>
